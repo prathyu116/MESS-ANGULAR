@@ -25,4 +25,38 @@ export class DataService {
   }
 
   // Other APIs for meals and expenses can be added similarly
+  // Fetch all meals
+  getMeals(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/meals`);
+  }
+
+  // Add a new meal
+  addMeal(meal: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/meals`, meal);
+  }
+
+  // Update an existing meal
+  updateMeal(id: number, meal: any): Observable<any> {
+    return this.http.put<any>(`${this.apiUrl}/meals/${id}`, meal);
+  }
+
+  // Delete a meal
+  deleteMeal(id: number): Observable<any> {
+    return this.http.delete<any>(`${this.apiUrl}/meals/${id}`);
+  }
+
+  // Get Expenses
+  getExpenses(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/expenses`);
+  }  
+  // Add Expense
+  addExpense(expense: any): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/expenses`, expense);
+  }
+
+  // Delete Expense
+  deleteExpense(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/expenses/${id}`);
+  }
+
 }
