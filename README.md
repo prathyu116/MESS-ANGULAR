@@ -1,27 +1,32 @@
-# MessManagement
+# Mess Management Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+## About the Project
+This Mess Management Application is a simple and efficient web app designed to streamline the management of meals, residents, and expenses for a shared mess. Built using Angular, it features a user-friendly interface and uses Dummy JSON API as a mock backend for simulating API responses.
 
-## Development server
+### Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### 1. User Management
+- Add, edit, and delete users (residents of the mess).
+- View the list of all users.
 
-## Code scaffolding
+#### 2. Meal Management
+- Record daily meals for each user.
+- Calculate the total meals consumed by each user in a given month.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### 3. Expense Management
+- View a summary of total expenses for the month.
 
-## Build
+#### 4. Reporting
+- Monthly breakdown of:
+  - Meals per resident.
+  - Total expenses and cost per meal.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Tech Stack
+- **Angular** (Frontend framework)
+- **Dummy JSON API** (Mock backend)
+- **Bootstrap* (for styling)
 
-## Running unit tests
+### Demo Video
+Check out the functionality of the application in the [demo video](#).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
